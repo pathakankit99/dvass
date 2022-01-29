@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  font-family: 'Saira', sans-serif !important;
+}
+.center {
+  @apply flex items-center justify-center;
+}
+.btn{
+  transition: all 0.3s ease-in-out;
+}
+.btn{
+  @apply px-4 py-3 rounded-3xl m-2 text-sm tracking-wider capitalize font-thin;
+}
+.primary{
+  @apply bg-brand_red text-white;
+}
+.primary:hover{
+  @apply bg-brand_dark_red;
+}
+.outline-btn{
+  @apply outline;
+}
+.outline-btn:hover{
+  @apply bg-brand_black;
+}
+/* hero */
+#hero .hero-warrior img {
+  mix-blend-mode: lighten;
+}
+
+@media screen and (max-width: 700px){
+  .hero-warrior img{
+  width: 150vw !important;
+  max-width: 200vw !important;
+  object-fit: cover !important;
+  margin-left: -30%;
+}
+#hero .info{
+  bottom:0;
+}
+}
