@@ -42,7 +42,7 @@
   @apply hover:bg-brand_red hover:text-white;
 }
 /* hero */
-#hero .hero-warrior img {
+ .hero-warrior img {
   mix-blend-mode: lighten;
 }
 .placeholder-red::-webkit-input-placeholder { /* Edge */
@@ -66,4 +66,10 @@
 #hero .info{
   bottom:0;
 }
+}
+#cta *{
+}
+/* story section */
+#story *{
+  z-index: 1;
 }

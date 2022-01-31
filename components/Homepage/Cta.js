@@ -4,7 +4,7 @@ import Twitter from "../Icons/Twitter"
 const Cta = () => {
     return (
       <section
-        style={{ background: '#0b090a' }}
+        id="cta"
         className="center relative overflow-x-hidden p-6 text-white  lg:h-50vh lg:px-24 xl:px-52 "
       >
         <div className="absolute" style={{ right: '-20%' }}>
