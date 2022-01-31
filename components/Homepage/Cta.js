@@ -8,7 +8,7 @@ const Cta = () => {
         className="center relative overflow-x-hidden p-6 text-white  lg:h-50vh lg:px-24 xl:px-52 "
       >
         <div className="absolute" style={{ right: '-20%' }}>
-          <img width={500} src="/images/cta/img.png" />
+          <img className="ml-52 md:ml-0" width={500} src="/images/cta/img.png" />
         </div>
         <div className="content center w-full flex-wrap">
           <div className="w-full p-6 md:w-6/12">
@@ -44,17 +44,22 @@ const Cta = () => {
           </div>
           <div className="w-full p-6 md:w-6/12">
             <label className="capitalize">Newsletter sign up</label>
-            <div style={{borderRadius:"70px"}} className="mt-4 w-full md:w-10/12 flex border border-brand_red px-4 py-3 text-brand_red">
+            <div
+              style={{ borderRadius: '70px' }}
+              className="relative mt-4 flex w-full border border-brand_red px-4 py-3 text-brand_red md:w-10/12"
+            >
               <input
                 className="placeholder-red flex-1 bg-transparent focus:outline-none"
                 placeholder="Email Address"
               />
-              <button className="btn primary py-1 m-0" style={{margin:0}}>
-                <span>Submit</span>
-                <span>
-                  <NextArrow />
-                </span>
-              </button>
+              <div className="absolute center md:relative md:block" style={{top:"120%", left:"0", right:"0"}}>
+                <button className=" btn primary m-0 py-1" style={{ margin: 0 }}>
+                  <span>Submit</span>
+                  <span>
+                    <NextArrow />
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
