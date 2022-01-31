@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Discord from '../Icons/Discord'
+import NextArrow from '../Icons/NextArrow'
 function Hero() {
   return (
-    <section id="hero" className=" w-full overflow-hidden p-6 lg:px-52 ">
+    <section
+      id="hero"
+      className=" w-full overflow-hidden p-6 lg:px-24 xl:px-52 "
+    >
       <div
         style={{ zIndex: -1 }}
         className="absolute top-0 left-0 right-0 bottom-0"
@@ -14,34 +18,34 @@ function Hero() {
         />
       </div>
       <div className="relative h-80vh w-full">
-        <div className="hero-images relative flex justify-center w-full">
-          <div
-            className="shogun-warriors absolute top-0 w-full lg:w-8/12"
-          >
+        <div className="hero-images relative flex w-full justify-center">
+          <div className="shogun-warriors absolute top-0 w-full lg:w-8/12">
             <img src="/images/hero/img2.png" />
           </div>
           <div className="hero-warrior shogun-warriors w-full lg:w-10/12">
             <img src="/images/hero/img1.png" />
           </div>
         </div>
-        <div
-          className="absolute info left-0 right-0 text-center text-lg text-gray-300 bottom-20 md:bottom-0 "
-        >
+        <div className="info absolute left-0 right-0 bottom-20 text-center text-lg text-gray-300 md:bottom-0 ">
           <p>
             If they stand behind you, protect them · If they stand beside you,
             <br />
             respect them · If they stand against you, defeat them.
           </p>
-          <div className="pt-4">
+          <div className="center pt-4 flex-wrap">
             <a href="https://google.com">
-              <button className="primary btn ">
-              <span>Public Mint</span>
-              <img className="inline pl-3" src="/images/icons/arrow-next.png" />
-            </button>
+              <button className="btn primary ">
+                <span>Public Mint</span>
+                <span>
+                  <NextArrow />
+                </span>
+              </button>
             </a>
             <button className="btn outline-btn ">
               <span>Join Our Discord</span>
-              <img className="inline pl-3" src="/images/icons/discord.png" />
+              <span>
+                <Discord />
+              </span>
             </button>
           </div>
         </div>

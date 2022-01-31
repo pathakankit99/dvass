@@ -12,25 +12,50 @@
   transition: all 0.3s ease-in-out;
 }
 .btn{
-  @apply px-4 py-3 rounded-3xl m-2 text-sm tracking-wider capitalize font-thin;
+  @apply px-4 py-3 rounded-3xl m-2 text-sm tracking-wider capitalize font-thin inline-block;
 }
 .primary{
-  @apply bg-brand_red text-white;
+  @apply bg-brand_red text-white flex inline-block font-thin;
 }
 .primary:hover{
-  @apply bg-brand_dark_red;
+  @apply hover:bg-brand_dark_red;
 }
 .outline-btn{
-  @apply outline;
+  @apply flex border inline-block font-thin;
+}
+.outline-btn *{
+  @apply fill-current;
 }
 .outline-btn:hover{
   @apply bg-brand_black;
+}
+.red-outline-btn{
+  @apply flex border border-brand_red text-brand_red;
+}
+.red-outline-btn *{
+  @apply fill-current;
+}
+.btn *:nth-child(2){
+  @apply ml-2;
+}
+.red-outline-btn:hover{
+  @apply hover:bg-brand_red hover:text-white;
 }
 /* hero */
 #hero .hero-warrior img {
   mix-blend-mode: lighten;
 }
+.placeholder-red::-webkit-input-placeholder { /* Edge */
+  @apply text-brand_red;
+}
 
+.placeholder-red:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  @apply text-brand_red;
+}
+
+.placeholder-red::placeholder {
+  @apply text-brand_red;
+}
 @media screen and (max-width: 700px){
   .hero-warrior img{
   width: 150vw !important;
