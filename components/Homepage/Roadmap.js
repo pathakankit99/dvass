@@ -9,21 +9,14 @@ const Roadmap = () => {
         <div
           style={{
             zIndex: 1,
-            marginTop: -150,
+            marginTop: -175,
             mixBlendMode: 'lighten',
           }}
           className="world-warrior  absolute right-0 flex justify-end lg:pr-16"
         >
-          <img
-            className=" m-0 p-0"
-            style={{
-              width: '80%',
-            }}
-            src="/images/roadmap/img1.png"
-            alt="bg"
-          />
+          <img className=" m-0 p-0" src="/images/roadmap/img1.png" alt="bg" />
         </div>
-        <div className="relative h-auto w-full lg:w-6/12">
+        <div className="relative mt-32 h-auto w-full lg:mt-0 lg:w-6/12">
           <div style={{ zIndex: 2 }} className="absolute top-0 -ml-16 -mt-6">
             <img src="/images/story/img3.png" />
           </div>
@@ -46,32 +39,37 @@ const Roadmap = () => {
 
       <section
         id="roadmap-content"
-        style={{ background: '#0b090a' }}
-        className="relative flex justify-end overflow-x-hidden p-6 
-       text-white  lg:h-150vh lg:px-24 xl:px-52  "
-      >
-        <div
-          style={{
-            zIndex: 2,
-            background: '#0b090a',
-            top: '10%',
-          }}
-          className="world-warrior absolute left-0 right-0 bottom-0"
-        >
-          <img
-            style={{
-              objectFit: 'contain',
-              height: '100%',
-              width: '100vw',
-              mixBlendMode: 'screen',
-            }}
-            src="/images/roadmap/bg.png"
-            alt="bg"
-          />
-        </div>
-      </section>
+        style={{
+          background: '#0b090a',
+          marginTop: '-50vh',
+          zIndex: 5,
+          mixBlendMode: 'lighten',
+        }}
+        className=" min-h-screen p-6 text-white  lg:h-150vh lg:px-24 xl:px-52  "
+      ></section>
     </>
   )
 }
+
+
+        // <div
+        //   style={{
+        //     zIndex: 2,
+        //     background: '#0b090a',
+        //     top: '10%',
+        //   }}
+        //   className="world-warrior absolute left-0 right-0 bottom-0"
+        // >
+        //   <img
+        //     style={{
+        //       objectFit: 'fill',
+        //       height: '100%',
+        //       width: '150vw',
+        //       mixBlendMode: 'screen',
+        //     }}
+        //     src="/images/roadmap/bg.png"
+        //     alt="bg"
+        //   />
+        // </div>
 
 export default Roadmap
