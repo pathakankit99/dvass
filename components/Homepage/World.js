@@ -22,31 +22,26 @@ const Story = () => {
         />
       </div>
       <div className="world-warrior absolute right-0 flex justify-center lg:justify-end">
-        <img
-          src="/images/world/warrior.png"
-        />
+        <img src="/images/world/warrior.png" />
       </div>
-      <div className="content relative p-6">
+      <div className="content relative py-6">
         <div
-          className="absolute"
-          style={{
-            zIndex: 2,
-            top: '5vh',
-          }}
+          style={{ zIndex: 2, marginTop: '3vh' }}
+          className="absolute top-0 -ml-16"
         >
-          <img width={400} src="/images/world/swirl.png" />
+          <img src="/images/world/swirl.png" />
         </div>
         <div style={{ marginTop: '5vh', zIndex: '3' }} className="relative">
           <h3 className="text-4xl font-medium uppercase text-white">
             The world of
           </h3>
-          <h3 className="text-5xl font-medium uppercase">shogun warriors</h3>
+          <h3 className="text-5xl font-medium uppercase">shŌgun warriors</h3>
         </div>
         <div
           style={{ zIndex: '3' }}
           className="relative w-full text-justify lg:w-8/12"
         >
-          <p className="relative pt-3 text-sm font-light tracking-wider text-brand_gray">
+          <p className="text-md relative pt-3 text-sm text-base font-light tracking-wider text-brand_gray">
             Immerse yourself, step into the dark, chaotic, yet serene city of
             Magome-juku, where our warrior exists. This is a world created by
             the Samurai, we are in a world led strictly by the Shogunate, a

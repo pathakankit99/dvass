@@ -83,7 +83,7 @@
 
 @media only screen and (max-width: 520px) {
   #world .world-warrior {
-    mix-blend-mode: screen;
+    mix-blend-mode: color-dodge;
     z-index: 2;
     top: 0;
     margin: 0 !important;
@@ -98,7 +98,7 @@
     margin-top: 50vh;
   }
 }
-@media only screen and (min-width: 521px) and (max-width: 1024px) {
+@media only screen and (min-width: 521px) and (max-width: 819px) {
   #world .world-warrior {
     mix-blend-mode: lighten;
     z-index: 2;
@@ -109,6 +109,29 @@
   }
   #world .content {
     margin-top: 70vh;
+  }
+   #world .world-warrior img {
+    width: 100vw;
+    height: 90vw;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  #world .world-warrior {
+    mix-blend-mode: lighten;
+    z-index: 2;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  #world .content {
+    margin-top: 70vh;
+  }
+   #world .world-warrior img {
+    width: 100vw;
+    height: auto;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1261px) {

@@ -6,13 +6,13 @@ const Cta = () => {
     <section
       style={{ background: '#0b090a' }}
       id="cta"
-      className="center relative overflow-hidden p-6 text-white  lg:h-50vh lg:px-24 xl:px-52 py-16"
+      className="center relative overflow-hidden p-6 py-16  text-white lg:h-50vh lg:px-24 xl:px-52"
     >
       <div className="absolute" style={{ right: '-20%' }}>
         <img className="ml-52 md:ml-0" width={500} src="/images/cta/img.png" />
       </div>
       <div className="content center w-full flex-wrap">
-        <div className="w-full p-6 lg:w-7/12">
+        <div className="w-full lg:w-7/12">
           <div>
             <h3 className="text-4xl font-medium uppercase text-white">
               Join the strong
@@ -21,7 +21,7 @@ const Cta = () => {
               Warriors community
             </h3>
           </div>
-          <p className="pt-3 text-sm font-light tracking-wider text-brand_gray">
+          <p className="text-md pt-3 text-sm text-base font-light tracking-wider text-brand_gray">
             Join the discussion in one of our active online TTRPG communities,
             get tips, advice, and answers to questions. Share your ideas, be
             inspired, and debate the latest content release!
@@ -43,7 +43,7 @@ const Cta = () => {
             </button>
           </div>
         </div>
-        <div className="w-full p-6 lg:w-5/12">
+        <div className="w-full lg:w-5/12">
           <label className="capitalize">Newsletter sign up</label>
           <div
             style={{ borderRadius: '70px' }}

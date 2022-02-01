@@ -3,7 +3,7 @@ const Story = () => {
     <section
       style={{ background: '#0b090a' }}
       id="story"
-      className="center relative overflow-x-hidden lg:overflow-hidden p-6 text-white  xl:h-screen lg:px-24 xl:px-52 "
+      className="center relative overflow-x-hidden p-6 text-white lg:overflow-hidden  lg:px-24 xl:h-screen xl:px-52 "
     >
       <div
         style={{
@@ -28,23 +28,23 @@ const Story = () => {
         <img width={800} src="/images/story/smoke.png" />
       </div>
       <div className="center min-h-40vh relative w-full flex-wrap">
-        <div className="w-full p-6 lg:w-6/12 center">
+        <div className="center w-full lg:w-6/12">
           <img width={400} src="/images/story/warrior.png" />
         </div>
-        <div className="relative w-full p-6 lg:w-6/12">
-          <div style={{zIndex:2}} className="absolute top-0 -ml-16">
+        <div className="relative w-full lg:w-6/12">
+          <div style={{ zIndex: 2 }} className="absolute top-0 -ml-16">
             <img src="/images/story/img3.png" />
           </div>
-          <div style={{zIndex:2}} className="relative">
+          <div style={{ zIndex: 2 }} className="relative">
             <h3 className="text-4xl font-medium uppercase text-white">
               Story of the
             </h3>
             <h3 className="text-5xl font-medium uppercase text-brand_red">
-              shogun warriors
+              shŌgun warriors
             </h3>
           </div>
           <div>
-            <p className="pt-3 text-sm font-light tracking-wider text-brand_gray">
+            <p className="text-md pt-3 text-sm text-base font-light tracking-wider text-brand_gray">
               Immerse yourself, step into the dark, chaotic, yet serene city of
               Magome-juku, where our warrior exists. This is a world created by
               the Samurai, we are in a world led strictly by the Shogunate, a
