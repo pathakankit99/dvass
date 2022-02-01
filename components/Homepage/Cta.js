@@ -21,7 +21,7 @@ const Cta = () => {
               Warriors community
             </h3>
           </div>
-          <p className="text-md pt-3 text-sm font-light tracking-wider text-brand_gray md:text-base">
+          <p className="text-md pt-3 text-sm font-light tracking-wider text-brand_gray md:text-base lg:pr-4">
             Join the discussion in one of our active online TTRPG communities,
             get tips, advice, and answers to questions. Share your ideas, be
             inspired, and debate the latest content release!
@@ -62,7 +62,7 @@ const Cta = () => {
               </button>
             </div>
 
-            <button className="rounded-full bg-brand_red p-3" style={{ margin: 0 }}>
+            <button className="md:hidden rounded-full bg-brand_red p-3" style={{ margin: 0 }}>
               
               <span className='text-xs' style={{width:"32px"}}>
                 <NextArrow />

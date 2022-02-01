@@ -31,7 +31,7 @@ function Hero() {
             If they stand behind you, protect them · If they stand beside you,<br className='hidden sm:block'/>
             respect them · If they stand against you, defeat them.
           </p>
-          <div className="center pt-4 flex-wrap text-xs">
+          <div className="center pt-4 text-xs">
             <a href="https://google.com">
               <button className="btn text-xs primary ">
                 <span>Public Mint</span>

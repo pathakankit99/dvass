@@ -15,7 +15,7 @@ p{
   transition: all 0.3s ease-in-out;
 }
 .btn {
-  @apply m-2 inline-block rounded-3xl px-4 py-2 text-xs md:text-sm font-light capitalize tracking-wider;
+  @apply m-2 inline-block items-center rounded-3xl px-4 py-2 text-xs md:text-sm font-light capitalize tracking-wider;
 }
 .primary {
   @apply inline-block flex bg-brand_red font-thin text-white;
@@ -40,6 +40,9 @@ p{
 }
 .btn *:nth-child(2) {
   @apply ml-2;
+}
+.btn *:nth-child(2) *{
+  padding:3px;
 }
 .red-outline-btn:hover {
   @apply hover:bg-brand_red hover:text-white;
@@ -96,9 +99,9 @@ p{
 
 @media only screen and (max-width: 520px) {
   #world .world-warrior {
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: lighten;
     z-index: 2;
-    top: 0;
+    bottom: 0;
     margin: 0 !important;
   }
   #world .world-warrior img {
@@ -108,7 +111,7 @@ p{
     margin: 0;
   }
   #world .content {
-    margin-top: 50vh;
+    margin-bottom: 50vh;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 819px) {
@@ -118,10 +121,10 @@ p{
     margin-right: 0;
     left: 0;
     right: 0;
-    top: 0;
+    bottom: 0;
   }
   #world .content {
-    margin-top: 70vh;
+    margin-bottom: 70vh;
   }
    #world .world-warrior img {
     width: 100vw;
@@ -136,10 +139,10 @@ p{
     margin-right: 0;
     left: 0;
     right: 0;
-    top: 0;
+    bottom: 0;
   }
   #world .content {
-    margin-top: 70vh;
+    margin-bottom: 70vh;
   }
    #world .world-warrior img {
     width: 100vw;
