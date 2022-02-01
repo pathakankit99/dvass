@@ -3,7 +3,7 @@ const Story = () => {
     <section
       style={{ background: '#0b090a' }}
       id="story"
-      className="center relative overflow-x-hidden p-6 text-white  lg:h-screen lg:px-24 xl:px-52 "
+      className="center relative overflow-x-hidden lg:overflow-hidden p-6 text-white  xl:h-screen lg:px-24 xl:px-52 "
     >
       <div
         style={{
@@ -14,7 +14,7 @@ const Story = () => {
         <img
           style={{
             objectFit: 'cover',
-            height: '100vh',
+            height: '100%',
             width: '100vw',
           }}
           src="/images/story/img2.png"
@@ -22,24 +22,24 @@ const Story = () => {
         />
       </div>
       <div
-        className="hero-warrior absolute top-0 left-0 "
+        className="hero-warrior absolute top-0 left-0 ml-20 lg:ml-0"
         style={{ mixBlendMode: 'lighten' }}
       >
         <img width={800} src="/images/story/smoke.png" />
       </div>
       <div className="center min-h-40vh relative w-full flex-wrap">
-        <div className="w-full p-6 md:w-6/12">
+        <div className="w-full p-6 lg:w-6/12 center">
           <img width={400} src="/images/story/warrior.png" />
         </div>
-        <div className="relative w-full p-6 md:w-6/12">
-          <div className="absolute top-0 -ml-16">
+        <div className="relative w-full p-6 lg:w-6/12">
+          <div style={{zIndex:2}} className="absolute top-0 -ml-16">
             <img src="/images/story/img3.png" />
           </div>
-          <div>
-            <h3 className="text-2xl font-medium uppercase text-white">
+          <div style={{zIndex:2}} className="relative">
+            <h3 className="text-4xl font-medium uppercase text-white">
               Story of the
             </h3>
-            <h3 className="text-3xl font-medium uppercase text-brand_red">
+            <h3 className="text-5xl font-medium uppercase text-brand_red">
               shogun warriors
             </h3>
           </div>
