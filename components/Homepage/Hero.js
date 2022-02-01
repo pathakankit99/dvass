@@ -22,7 +22,7 @@ function Hero() {
           <div className="shogun-warriors absolute top-0 w-full lg:w-8/12">
             <img src="/images/hero/img2.png" />
           </div>
-          <div className="hero-warrior shogun-warriors w-full lg:w-10/12">
+          <div className="hero-warrior shogun-warriors w-full lg:w-10/12 mt-16">
             <img src="/images/hero/img1.png" />
           </div>
         </div>
@@ -31,7 +31,7 @@ function Hero() {
             If they stand behind you, protect them · If they stand beside you,<br className='hidden sm:block'/>
             respect them · If they stand against you, defeat them.
           </p>
-          <div className="center pt-4 text-xs">
+          <div className="center flex-wrap pt-4 text-xs">
             <a href="https://google.com">
               <button className="btn text-xs primary ">
                 <span>Public Mint</span>

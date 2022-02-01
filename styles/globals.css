@@ -111,7 +111,7 @@ p{
     margin: 0;
   }
   #world .content {
-    margin-bottom: 50vh;
+    margin-bottom: 40vh;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 819px) {
@@ -177,6 +177,8 @@ p{
     margin: 0;
   }
 }
+/* warrior */
+
 /* roadmap */
 #roadmap img{
   width: 80%;

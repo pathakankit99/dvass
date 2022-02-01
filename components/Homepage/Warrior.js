@@ -3,14 +3,14 @@ const Warrior = () => {
     <section
       style={{ background: '#0b090a' }}
       id="warrior"
-      className="relative flex justify-end overflow-x-hidden p-6 
-       py-60 text-white lg:-mt-64 lg:h-150vh lg:px-24 xl:px-52"
+      className="h-175vh relative justify-end overflow-hidden p-6 
+       pb-32 text-white lg:-mt-64 lg:flex md:h-150vh lg:py-60 lg:px-24 xl:px-52"
     >
       <div
         style={{
           zIndex: 1,
         }}
-        className="world-warrior absolute top-0 left-0 right-0 bottom-0"
+        className="world-warrior absolute top-0 left-0 right-0 bottom-0 hidden md:block"
       >
         <img
           style={{
@@ -54,6 +54,22 @@ const Warrior = () => {
             unmatched brutal savagery in battle that the warrior held.
           </p>
         </div>
+      </div>
+
+      <div
+        style={{
+          zIndex: 0,
+          top: '70vh',
+        }}
+        className="warrior-mobile-bg absolute left-0  right-0 md:hidden "
+      >
+        <img
+          style={{
+            width: '100vw',
+          }}
+          src="/images/warrior/bg_mobile.jpg"
+          alt="bg"
+        />
       </div>
     </section>
   )
