@@ -183,12 +183,12 @@ p{
 }
 @media only screen and (max-width: 499px) {
 #warrior{
-  height: 180vh;
+  height: 150vh;
 }
 }
 @media only screen and (min-width: 500px) and (max-width: 586px) {
 #warrior{
-  height: 220vh;
+  height: 200vh;
 }
 }
 @media only screen and (min-width: 587px) and (max-width: 764px) {
@@ -208,6 +208,10 @@ p{
    margin-top: -60px !important;
   width: 60%;
 }
+}
+
+@media only screen and (max-width: 521px) {
+
 }
 
 #roadmap-content * {
