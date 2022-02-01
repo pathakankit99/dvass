@@ -22,16 +22,16 @@ const Story = () => {
         />
       </div>
       <div
-        className="hero-warrior absolute top-0 left-0 ml-20 lg:ml-0"
+        className="hero-warrior absolute bottom-0 lg:top-0 left-0 ml-20 lg:ml-0"
         style={{ mixBlendMode: 'lighten' }}
       >
         <img width={800} src="/images/story/smoke.png" />
       </div>
       <div className="center min-h-40vh relative w-full flex-wrap">
-        <div className="center w-full lg:w-6/12">
+        <div className="center order-2 lg:order-1 mt-16 lg:mt-0 w-full lg:w-6/12">
           <img width={400} src="/images/story/warrior.png" />
         </div>
-        <div className="relative w-full lg:w-6/12 mt-6 lg:mt-0">
+        <div className="relative w-full order-1 lg:order-2 lg:w-6/12 mt-6 lg:mt-0">
           <div style={{ zIndex: 2 }} className="absolute top-0 -ml-16">
             <img src="/images/story/img3.png" />
           </div>

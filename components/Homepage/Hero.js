@@ -26,22 +26,21 @@ function Hero() {
             <img src="/images/hero/img1.png" />
           </div>
         </div>
-        <div className="info absolute left-0 right-0 bottom-20 text-center text-lg text-gray-300 md:bottom-0 ">
+        <div className="info absolute left-0 right-0 bottom-20 text-center text-sm md:text-lg  text-gray-300 md:bottom-0 ">
           <p>
-            If they stand behind you, protect them · If they stand beside you,
-            <br />
+            If they stand behind you, protect them · If they stand beside you,<br className='hidden sm:block'/>
             respect them · If they stand against you, defeat them.
           </p>
-          <div className="center pt-4 flex-wrap">
+          <div className="center pt-4 flex-wrap text-xs">
             <a href="https://google.com">
-              <button className="btn primary ">
+              <button className="btn text-xs primary ">
                 <span>Public Mint</span>
                 <span>
                   <NextArrow />
                 </span>
               </button>
             </a>
-            <button className="btn outline-btn ">
+            <button className="btn text-xs outline-btn ">
               <span>Join Our Discord</span>
               <span>
                 <Discord />

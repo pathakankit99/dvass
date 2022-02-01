@@ -21,7 +21,7 @@ const Cta = () => {
               Warriors community
             </h3>
           </div>
-          <p className="text-md pt-3 text-sm text-base font-light tracking-wider text-brand_gray">
+          <p className="text-md pt-3 text-sm font-light tracking-wider text-brand_gray md:text-base">
             Join the discussion in one of our active online TTRPG communities,
             get tips, advice, and answers to questions. Share your ideas, be
             inspired, and debate the latest content release!
@@ -43,7 +43,7 @@ const Cta = () => {
             </button>
           </div>
         </div>
-        <div className="w-full lg:w-5/12">
+        <div className="mt-16 w-full lg:mt-0 lg:w-5/12">
           <label className="capitalize">Newsletter sign up</label>
           <div
             style={{ borderRadius: '70px' }}
@@ -53,7 +53,30 @@ const Cta = () => {
               className="placeholder-red flex-1 bg-transparent focus:outline-none"
               placeholder="Email Address"
             />
-            <div
+            <div className=" hidden md:flex">
+              <button className=" btn primary m-0 py-1 " style={{ margin: 0 }}>
+                <span>Submit</span>
+                <span>
+                  <NextArrow />
+                </span>
+              </button>
+            </div>
+
+            <button className="rounded-full bg-brand_red p-3" style={{ margin: 0 }}>
+              
+              <span className='text-xs' style={{width:"32px"}}>
+                <NextArrow />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Cta
+{/* <div
               className="center absolute md:relative md:block"
               style={{ top: '120%', left: '0', right: '0' }}
             >
@@ -63,12 +86,4 @@ const Cta = () => {
                   <NextArrow />
                 </span>
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export default Cta
+            </div> */}
