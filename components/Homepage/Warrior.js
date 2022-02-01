@@ -3,8 +3,8 @@ const Warrior = () => {
     <section
       style={{ background: '#0b090a' }}
       id="warrior"
-      className="h-175vh relative justify-end overflow-hidden p-6 
-       pb-32 text-white lg:-mt-64 lg:flex md:h-150vh lg:py-60 lg:px-24 xl:px-52"
+      className="relative justify-end overflow-hidden p-6 
+       pb-32 text-white lg:-mt-64 lg:flex lg:py-60 lg:px-24 xl:px-52"
     >
       <div
         style={{

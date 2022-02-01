@@ -178,13 +178,34 @@ p{
   }
 }
 /* warrior */
+#warrior{
+  height: 150vh;
+}
+@media only screen and (max-width: 499px) {
+#warrior{
+  height: 180vh;
+}
+}
+@media only screen and (min-width: 500px) and (max-width: 586px) {
+#warrior{
+  height: 220vh;
+}
+}
+@media only screen and (min-width: 587px) and (max-width: 764px) {
+#warrior{
+  height: 250vh;
+}
+}
 
 /* roadmap */
-#roadmap img{
+#roadmap .roadmap-img1{
+  
+            margin-top: -175px;
   width: 80%;
 }
 @media only screen and (min-width: 521px) and (max-width: 1200px) {
- #roadmap img{
+ #roadmap .roadmap-img1{
+   margin-top: -60px !important;
   width: 60%;
 }
 }

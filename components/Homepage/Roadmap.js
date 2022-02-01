@@ -4,19 +4,18 @@ const Roadmap = () => {
       <section
         style={{ background: '#0b090a' }}
         id="roadmap"
-        className="min-h-screen w-full p-6 text-white  lg:px-24 xl:px-52"
+        className="min-h-screen w-full relative md:m-0 p-6 text-white  lg:px-24 xl:px-52"
       >
         <div
           style={{
             zIndex: 1,
-            marginTop: -175,
             mixBlendMode: 'lighten',
           }}
-          className="world-warrior  absolute right-0 flex justify-end lg:pr-16"
+          className="world-warrior absolute right-0 flex hidden justify-end sm:flex "
         >
-          <img className=" m-0 p-0" src="/images/roadmap/img1.png" alt="bg" />
+          <img className="roadmap-img1 m-0 p-0" src="/images/roadmap/img1.png" alt="bg" />
         </div>
-        <div className="relative mt-32 h-auto w-full lg:mt-0 lg:w-6/12">
+        <div className="relative h-auto w-full sm:w-6/12 lg:w-6/12">
           <div style={{ zIndex: 2 }} className="absolute top-0 -ml-16 -mt-6">
             <img src="/images/story/img3.png" />
           </div>
@@ -35,9 +34,24 @@ const Roadmap = () => {
             </p>
           </div>
         </div>
+        <div
+          style={{
+            zIndex: 2,
+          }}
+          className="absolute left-0 right-0 bottom-0 sm:hidden"
+        >
+          <img
+            style={{
+              objectFit: 'fill',
+              width: '100vw',
+            }}
+            src="/images/roadmap/img1_mobile.jpg"
+            alt="bg"
+          />
+        </div>
       </section>
 
-      <section
+      {/* <section
         id="roadmap-content"
         style={{
           background: '#0b090a',
@@ -46,7 +60,7 @@ const Roadmap = () => {
           mixBlendMode: 'lighten',
         }}
         className=" min-h-screen p-6 text-white  lg:h-150vh lg:px-24 xl:px-52  "
-      ></section>
+      ></section> */}
     </>
   )
 }
