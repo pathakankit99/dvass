@@ -211,7 +211,9 @@ p{
 }
 
 @media only screen and (max-width: 521px) {
-
+ #roadmap{
+   min-height: 80vh !important;
+}
 }
 
 #roadmap-content * {
