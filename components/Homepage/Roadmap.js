@@ -4,7 +4,7 @@ const Roadmap = () => {
       <section
         style={{ background: '#0b090a' }}
         id="roadmap"
-        className="flex flex-col justify-end min-h-screen w-full relative md:m-0 p-6 text-white  lg:px-24 xl:px-52"
+        className="flex flex-col justify-end md:justify-start min-h-screen w-full relative md:m-0 p-6 text-white  lg:px-24 xl:px-52"
       >
         <div
           style={{
