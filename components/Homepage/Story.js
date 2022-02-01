@@ -9,7 +9,7 @@ const Story = () => {
         style={{
           zIndex: 1,
         }}
-        className="hero-warrior absolute top-0 left-0 right-0 bottom-0"
+        className="story-warrior absolute top-0 left-0 right-0 bottom-0"
       >
         <img
           style={{
@@ -31,15 +31,15 @@ const Story = () => {
         <div className="center w-full lg:w-6/12">
           <img width={400} src="/images/story/warrior.png" />
         </div>
-        <div className="relative w-full lg:w-6/12">
+        <div className="relative w-full lg:w-6/12 mt-6 lg:mt-0">
           <div style={{ zIndex: 2 }} className="absolute top-0 -ml-16">
             <img src="/images/story/img3.png" />
           </div>
-          <div style={{ zIndex: 2 }} className="relative">
-            <h3 className="text-4xl font-medium uppercase text-white">
+          <div style={{ zIndex: 2, marginTop: '5vh' }} className="relative">
+            <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
               Story of the
             </h3>
-            <h3 className="text-5xl font-medium uppercase text-brand_red">
+            <h3 className="text-3xl font-medium uppercase text-brand_red md:text-5xl">
               shŌgun warriors
             </h3>
           </div>

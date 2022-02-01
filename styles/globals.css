@@ -75,6 +75,16 @@
 #story * {
   z-index: 1;
 }
+@media only screen and (max-width: 700px) {
+  .story-warrior img {
+    width: 150vw;
+    max-width: 200vw !important;
+    object-fit: cover !important;
+  }
+  #story .info {
+    bottom: 0;
+  }
+}
 
 /* world */
  #world .world-warrior img {
@@ -160,4 +170,8 @@
     height: auto;
     margin: 0;
   }
+}
+/* roadmap */
+#roadmap-content * {
+  z-index: 3;
 }

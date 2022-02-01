@@ -4,13 +4,15 @@ import Cta from './Cta';
 import Story from "./Story"
 import World from "./World"
 import Warrior from "./Warrior"
+import Roadmap from "./Roadmap"
 function Homepage() {
   return <div>
     <Hero />
     <Cta />
     <Story />
     <World />
-    <Warrior/>
+    <Warrior />
+    <Roadmap/>
   </div>;
 }
 

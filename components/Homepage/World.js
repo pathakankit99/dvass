@@ -32,10 +32,10 @@ const Story = () => {
           <img src="/images/world/swirl.png" />
         </div>
         <div style={{ marginTop: '5vh', zIndex: '3' }} className="relative">
-          <h3 className="text-4xl font-medium uppercase text-white">
+          <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
             The world of
           </h3>
-          <h3 className="text-5xl font-medium uppercase">shŌgun warriors</h3>
+          <h3 className="text-3xl md:text-5xl font-medium uppercase">shŌgun warriors</h3>
         </div>
         <div
           style={{ zIndex: '3' }}

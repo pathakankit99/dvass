@@ -3,8 +3,8 @@ const Warrior = () => {
     <section
       style={{ background: '#0b090a' }}
       id="warrior"
-          className="relative flex py-60 justify-end overflow-x-hidden 
-       p-6 text-white lg:-mt-64 lg:h-150vh lg:px-24 xl:px-52"
+      className="relative flex justify-end overflow-x-hidden p-6 
+       py-60 text-white lg:-mt-64 lg:h-150vh lg:px-24 xl:px-52"
     >
       <div
         style={{
@@ -27,10 +27,10 @@ const Warrior = () => {
           <img src="/images/story/img3.png" />
         </div>
         <div style={{ marginTop: '5vh', zIndex: '3' }} className="relative">
-          <h3 className="text-4xl font-medium uppercase text-white">
-            The world of
+          <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
+            The warrior
           </h3>
-          <h3 className="text-5xl font-medium uppercase text-brand_red">
+          <h3 className="text-3xl font-medium uppercase text-brand_red md:text-5xl">
             shŌgun warriors
           </h3>
         </div>

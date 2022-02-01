@@ -14,10 +14,10 @@ const Cta = () => {
       <div className="content center w-full flex-wrap">
         <div className="w-full lg:w-7/12">
           <div>
-            <h3 className="text-4xl font-medium uppercase text-white">
+            <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
               Join the strong
             </h3>
-            <h3 className="text-5xl font-medium uppercase text-brand_red">
+            <h3 className="text-3xl font-medium uppercase text-brand_red md:text-5xl">
               Warriors community
             </h3>
           </div>
