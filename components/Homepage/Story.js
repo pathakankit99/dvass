@@ -28,8 +28,8 @@ const Story = () => {
         <img width={800} src="/images/story/smoke.png" />
       </div>
       <div className="center min-h-40vh relative w-full flex-wrap">
-        <div className="center order-2 lg:order-1 mt-16 lg:mt-0 w-full lg:w-6/12">
-          <img width={400} src="/images/story/warrior.png" />
+        <div className="warrior center order-2 lg:order-1 mt-16 lg:mt-0 w-full lg:w-6/12">
+          <img src="/images/story/warrior.png" />
         </div>
         <div className="relative w-full order-1 lg:order-2 lg:w-6/12 mt-6 lg:mt-0">
           <div style={{ zIndex: 2 }} className="absolute top-0 -ml-16">

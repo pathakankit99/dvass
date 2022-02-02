@@ -1,9 +1,9 @@
 const Roadmap = () => {
   return (
-    <div style={{ background: '#0b090a' }} className="overflow-hidden relative">
+    <div style={{ background: '#0b090a' }} className="relative overflow-hidden">
       <section
         id="roadmap"
-        className="relative flex min-h-70vh w-full flex-col justify-end p-6 text-white md:m-0 md:justify-start  lg:px-24 xl:px-52"
+        className="min-h-70vh relative flex w-full flex-col justify-end p-6 text-white md:m-0 md:justify-start  lg:px-24 xl:px-52"
       >
         <div
           style={{
@@ -172,29 +172,23 @@ const Roadmap = () => {
           </div>
         </div>
       </section>
+      <section className="relative p-6 py-16  text-center text-white  lg:px-24 xl:px-52">
+        <div className="center relative">
+          <img
+            width={300}
+            className="absolute top-0 -mt-4"
+            src="/images/story/img3.png"
+          />
+          <p className="w-full text-brand_gray md:w-5/12 lg:w-4/12">
+            Even the best laid plans can change in the heat of battle so expect
+            the unexpected while we work towards these major milestones.
+          </p>
+        </div>
+
+        <hr className="border-brand_red m-6" />
+      </section>
     </div>
   )
 }
-
-
-        // <div
-        //   style={{
-        //     zIndex: 2,
-        //     background: '#0b090a',
-        //     top: '10%',
-        //   }}
-        //   className="world-warrior absolute left-0 right-0 bottom-0"
-        // >
-        //   <img
-        //     style={{
-        //       objectFit: 'fill',
-        //       height: '100%',
-        //       width: '150vw',
-        //       mixBlendMode: 'screen',
-        //     }}
-        //     src="/images/roadmap/bg.png"
-        //     alt="bg"
-        //   />
-        // </div>
 
 export default Roadmap

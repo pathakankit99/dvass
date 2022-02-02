@@ -266,6 +266,17 @@ p{
   z-index: 2 !important;
   position: relative;
 }
+@media only screen and (max-width: 521px) {
+  #roadmap-content .card-container{
+    margin-top: 10vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+#roadmap-content .card .part1 .lamp img{
+  
+  margin-top: -50vh;
+}
+}
 #roadmap-content .card .part1 .content{
   @apply w-9/12 p-3;
 }
@@ -328,4 +339,53 @@ p{
   margin-bottom: -20%;
   margin-left: -30%;
   overflow: hidden;
+}
+
+/* rarity */
+#rarity .slick-active{
+  display: flex;
+  justify-content: center;
+} 
+/* #rarity .card-container{
+  width: 100vw;
+} */
+#rarity .card-container .card{
+  width: 46%;
+}
+#rarity .card-container{
+  overflow-x: hidden;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#rarity .card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#rarity .card-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+@media only screen and (max-width: 521px) {
+#rarity .card-container .card{
+  min-width: 70vw;
+}
+#rarity .card-container{
+  overflow-x: scroll;
+}
+}
+@media only screen and (min-width: 522px) and (max-width: 1024px) {
+#rarity .card-container .card{
+  min-width: 50vw;
+}
+#rarity .card-container{
+  overflow-x: scroll;
+}
+}
+#rarity .arrows svg{
+  width: 100px;
+}
+@media only screen and (max-width: 521px) {
+#rarity .arrows svg{
+  width: 50px;
+}
 }
