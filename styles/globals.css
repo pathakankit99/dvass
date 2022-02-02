@@ -47,6 +47,15 @@ p{
 .red-outline-btn:hover {
   @apply hover:bg-brand_red hover:text-white;
 }
+.min-h-80vh{
+  min-height: 80vh;
+}
+.min-h-70vh{
+  min-height: 70vh;
+}
+.min-h-60vh{
+  min-height: 60vh;
+}
 /* hero */
 .hero-warrior img {
   mix-blend-mode: lighten;
@@ -216,6 +225,107 @@ p{
 }
 }
 
+/* 
 #roadmap-content * {
   z-index: 3;
+} */
+
+#roadmap-content .card{
+  @apply p-6 flex flex-wrap relative lg:flex-nowrap justify-center bg-brand_black_2 border border-brand_red;
+}
+#roadmap-content .card{
+  border-radius: 50px;
+  height: 250px;
+  margin-bottom: 8vh;
+}
+@media only screen and (max-width: 521px) {
+#roadmap-content .card{
+  border-radius: 10px;
+  height: 400px;
+  margin-bottom: 8vh;
+}
+}
+@media only screen and (min-width: 522px) and (max-width: 1024px) {
+#roadmap-content .card{
+  border-radius: 10px;
+  height: 320px;
+  margin-bottom: 8vh;
+}
+}
+
+#roadmap-content .card .part1{
+  @apply flex w-full;
+}
+#roadmap-content .card .part1 .lamp{
+  @apply w-2/12 flex justify-center items-center relative;
+}
+#roadmap-content .card .part1 .lamp img{
+  max-width: 150px;
+  width: 50px;
+  margin-top: -30vh;
+  z-index: 2 !important;
+  position: relative;
+}
+#roadmap-content .card .part1 .content{
+  @apply w-9/12 p-3;
+}
+#roadmap-content .card .part1 .content h6{
+  @apply text-xl font-light text-brand_red;
+}
+#roadmap-content .card .part1 .content h5{
+  @apply text-2xl md:text-4xl lg:text-6xl pb-3;
+}
+#roadmap-content .card .part1 .content p{
+  @apply text-sm font-thin text-brand_gray tracking-wider;
+}
+
+#roadmap-content .card .part2{
+  @apply text-6xl lg:text-9xl flex items-end justify-end text-brand_red opacity-40;
+}
+@media only screen and (max-width: 521px) {
+#roadmap-content .card .part2{
+  
+  width: 100%;
+}
+}
+
+.card1{
+  z-index: 10;
+}
+.card2{
+  z-index: 9;
+}
+.card3{
+  z-index: 8;
+}
+.card4{
+  z-index: 7;
+}
+.card5{
+  z-index: 6;
+}
+
+.smoke{
+  z-index: 1;
+  mix-blend-mode: lighten;
+  position: absolute;
+}
+.smoke1 *{
+  /* z-index: 2; */
+  top: 0;
+  margin-top: -30%;
+  margin-left: -30%;
+}
+.smoke2 *{
+  /* z-index: 2; */
+  top: 0;
+  right: 0;
+  margin-left: -30vw;
+}
+.smoke3 {
+  /* z-index: 2; */
+  bottom: 0;
+  margin-bottom: -20%;
+  margin-left: -30%;
+  overflow: hidden;
 }

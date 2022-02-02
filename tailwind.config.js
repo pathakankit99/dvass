@@ -13,6 +13,7 @@ module.exports = {
         brand_gray: '#969393',
         brand_light_green: '#0D8239',
         brand_dark_gray: '#707070',
+        brand_black_2:"#090909"
       },
       opacity: {
         10: '0.1',
