@@ -1,7 +1,7 @@
 import React from 'react'
 import Discord from '../Icons/Discord'
 import NextArrow from '../Icons/NextArrow'
-function Hero() {
+function Hero(props) {
   return (
     <section
       id="hero"
@@ -22,30 +22,37 @@ function Hero() {
           <div className="shogun-warriors absolute top-0 w-full lg:w-8/12">
             <img src="/images/hero/img2.png" />
           </div>
-          <div className="hero-warrior shogun-warriors w-full lg:w-10/12 mt-16">
+          <div className="hero-warrior shogun-warriors mt-16 w-full lg:w-10/12">
             <img src="/images/hero/img1.png" />
           </div>
         </div>
-        <div className="info absolute left-0 right-0 bottom-20 text-center text-sm md:text-lg  text-gray-300 md:bottom-0 ">
+        <div className="info absolute left-0 right-0 bottom-20 text-center text-sm text-gray-300  md:bottom-0 md:text-lg ">
           <p>
-            If they stand behind you, protect them · If they stand beside you,<br className='hidden sm:block'/>
+            If they stand behind you, protect them · If they stand beside you,
+            <br className="hidden sm:block" />
             respect them · If they stand against you, defeat them.
           </p>
           <div className="center flex-wrap pt-4 text-xs">
-            <a href="https://google.com">
-              <button className="btn text-xs primary ">
+            <a href="#">
+              <button className="btn primary text-xs ">
                 <span>Public Mint</span>
                 <span>
                   <NextArrow />
                 </span>
               </button>
             </a>
-            <button className="btn text-xs outline-btn ">
-              <span>Join Our Discord</span>
-              <span>
-                <Discord />
-              </span>
-            </button>
+            <a
+              href={props?.discord}
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              <button className="btn outline-btn text-xs ">
+                <span>Join Our Discord</span>
+                <span>
+                  <Discord />
+                </span>
+              </button>
+            </a>
           </div>
         </div>
       </div>

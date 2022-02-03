@@ -1,7 +1,7 @@
 import NextArrow from "./Icons/NextArrow";
 import Discord from "./Icons/Discord";
 import Link from "next/link"
-const Footer = () => {
+const Footer = (props) => {
     return (
       <footer
         style={{ background: '#0b090a' }}
@@ -9,22 +9,24 @@ const Footer = () => {
       >
         <div className="flex flex-wrap">
           <div className="w-full md:w-6/12 md:pr-3">
-            <div className="logo flex items-center">
-              <img width={46} src="/images/navbar/logo.png" />
-              <img
-                width={200}
-                className="pl-3"
-                src="/images/navbar/shogun_warriors.png"
-              />
-            </div>
-            <p className="py-4 md:w-8/12 text-sm text-brand_gray">
+            <Link href="/">
+              <div className="logo flex cursor-pointer items-center">
+                <img width={46} src="/images/navbar/logo.png" />
+                <img
+                  width={200}
+                  className="pl-3"
+                  src="/images/navbar/shogun_warriors.png"
+                />
+              </div>
+            </Link>
+            <p className="py-4 text-sm text-brand_gray md:w-8/12">
               There will be great battles ahead. Only the Shōgun Warriors will
               remain standing.
             </p>
           </div>
           <div className="w-full md:w-6/12 md:pl-3">
-            <div className="flex items-center  md:justify-end  flex-wrap py-4 text-xs">
-              <a href="https://google.com">
+            <div className="flex flex-wrap  items-center  py-4 text-xs md:justify-end">
+              <a href="#">
                 <button className="btn primary text-xs ">
                   <span>Public Mint</span>
                   <span>
@@ -32,17 +34,23 @@ const Footer = () => {
                   </span>
                 </button>
               </a>
-              <button className="btn outline-btn text-xs ">
-                <span>Join Our Discord</span>
-                <span>
-                  <Discord />
-                </span>
-              </button>
+              <a href={props?.discord} target="_blank" referrerPolicy="no-referrer">
+                <button className="btn outline-btn text-xs ">
+                  <span>Join Our Discord</span>
+                  <span>
+                    <Discord />
+                  </span>
+                </button>
+              </a>
             </div>
             <div className="social_media py-3">
               <ul className="flex items-center  md:justify-end">
                 <li className="text-md px-2">
-                  <a href="https://twitter.com">
+                  <a
+                    target="_blank"
+                    referrerPolicy="no-referrer"
+                    href={props?.twitter}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="25.225"
@@ -60,7 +68,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="text-md px-2">
-                  <a href="https://instagram.com">
+                  <a
+                    target="_blank"
+                    referrerPolicy="no-referrer"
+                    href={props?.instagram}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20.847"
@@ -93,7 +105,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="text-md px-2">
-                  <a href="https://facebook.com">
+                  <a
+                    target="_blank"
+                    referrerPolicy="no-referrer"
+                    href={props?.fb}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="12.168"
@@ -111,7 +127,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="text-md px-2">
-                  <a href="https://youtube.com">
+                  <a
+                    target="_blank"
+                    referrerPolicy="no-referrer"
+                    href={props?.youtube}
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="22"

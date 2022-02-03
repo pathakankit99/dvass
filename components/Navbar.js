@@ -1,23 +1,25 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Menu from "./Icons/Menu"
-function Navbar() {
+function Navbar(props) {
   const [open, setOpen] = useState(false)
     const MobileNav = { true: 'translateX(0%)', false: 'translateX(100%)' }
     var style = {
       transform: MobileNav[open],
-    }
+  }
   return (
     <div className="relative z-10 p-6 text-white lg:px-24 xl:px-52">
       <nav className=" relative flex items-center justify-between">
-        <div className="logo flex items-center">
-          <img width={46} src="/images/navbar/logo.png" />
-          <img
-            width={200}
-            className="pl-3"
-            src="/images/navbar/shogun_warriors.png"
-          />
-        </div>
+        <Link href="/">
+          <div className="logo flex items-center cursor-pointer">
+            <img width={46} src="/images/navbar/logo.png" />
+            <img
+              width={200}
+              className="pl-3"
+              src="/images/navbar/shogun_warriors.png"
+            />
+          </div>
+        </Link>
         <div className="navigation hidden lg:flex">
           <div className="pages border-r pr-3">
             <ul className="flex">
@@ -41,7 +43,7 @@ function Navbar() {
           <div className="social_media pl-3">
             <ul className="flex items-center">
               <li className="text-md px-2">
-                <Link href="https://twitter.com">
+                <a target="_blank" referrerPolicy='no-referrer' href={props?.twitter}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25.225"
@@ -56,10 +58,10 @@ function Navbar() {
                       fill="#b80707"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
               <li className="text-md px-2">
-                <Link href="https://instagram.com">
+                <a target="_blank" referrerPolicy='no-referrer' href={props?.instagram}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20.847"
@@ -89,10 +91,10 @@ function Navbar() {
                       />
                     </g>
                   </svg>
-                </Link>
+                </a>
               </li>
               <li className="text-md px-2">
-                <Link href="https://facebook.com">
+                <a target="_blank" referrerPolicy='no-referrer' href={props?.fb }>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="12.168"
@@ -107,10 +109,10 @@ function Navbar() {
                       fill="#b80707"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
               <li className="text-md px-2">
-                <Link href="https://youtube.com">
+                <a target="_blank" referrerPolicy='no-referrer' href={props?.youtube}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
@@ -124,7 +126,7 @@ function Navbar() {
                       fill="#b80707"
                     />
                   </svg>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

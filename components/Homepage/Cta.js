@@ -1,7 +1,7 @@
 import NextArrow from '../Icons/NextArrow'
 import Discord from '../Icons/Discord'
 import Twitter from '../Icons/Twitter'
-const Cta = () => {
+const Cta = (props) => {
   return (
     <section
       style={{ background: '#0b090a' }}
@@ -27,7 +27,11 @@ const Cta = () => {
             inspired, and debate the latest content release!
           </p>
           <div className="flex pt-4">
-            <a href="https://google.com">
+            <a
+              href={props?.discord}
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
               <button className="btn red-outline-btn">
                 <span>Discord</span>
                 <span className="">
@@ -35,12 +39,18 @@ const Cta = () => {
                 </span>
               </button>
             </a>
-            <button className="btn red-outline-btn">
-              <span>Twitter</span>
-              <span>
-                <Twitter />
-              </span>
-            </button>
+            <a
+              href={props?.twitter}
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              <button className="btn red-outline-btn">
+                <span>Twitter</span>
+                <span>
+                  <Twitter />
+                </span>
+              </button>
+            </a>
           </div>
         </div>
         <div className="mt-16 w-full lg:mt-0 lg:w-5/12">

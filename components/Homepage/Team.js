@@ -225,10 +225,10 @@ const Team = () => {
                 <h6>Art & Design</h6>
               </div>
               <div className="flex fill-brand_red">
-                <a href="" className="mr-2 fill-brand_red">
+                <a href=""  target="_blank" referrerPolicy="no-referrer" className="mr-2 fill-brand_red">
                   <Twitter />
                 </a>
-                <a href="" className="fill-brand_red">
+                <a href=""  target="_blank" referrerPolicy="no-referrer" className="fill-brand_red">
                   <Instagram />
                 </a>
               </div>
@@ -253,10 +253,10 @@ const Team = () => {
                 <h6>Project Management</h6>
               </div>
               <div className="flex fill-brand_red">
-                <a href="" className="mr-2 fill-brand_red">
+                <a href=""  target="_blank" referrerPolicy="no-referrer" className="mr-2 fill-brand_red">
                   <Twitter />
                 </a>
-                <a href="" className="fill-brand_red">
+                <a href=""  target="_blank" referrerPolicy="no-referrer" className="fill-brand_red">
                   <Instagram />
                 </a>
               </div>
@@ -281,10 +281,10 @@ const Team = () => {
                 <h6>Development</h6>
               </div>
               <div className="flex fill-brand_red">
-                <a href="" className="mr-2 fill-brand_red">
+                <a href=""  target="_blank" referrerPolicy="no-referrer" className="mr-2 fill-brand_red">
                   <Twitter />
                 </a>
-                <a href="" className="fill-brand_red">
+                <a href=""  target="_blank" referrerPolicy="no-referrer" className="fill-brand_red">
                   <Instagram />
                 </a>
               </div>
@@ -313,10 +313,10 @@ const Team = () => {
                     <h6>{item?.position}</h6>
                   </div>
                   <div className="flex fill-brand_red">
-                    <a href="" className="mr-2 fill-brand_red">
+                    <a href={item?.twitter}  target="_blank" referrerPolicy="no-referrer" className="mr-2 fill-brand_red">
                       <Twitter />
                     </a>
-                    <a href="" className="fill-brand_red">
+                    <a href={item?.instagarm}  target="_blank" referrerPolicy="no-referrer" className="fill-brand_red">
                       <Instagram />
                     </a>
                   </div>
