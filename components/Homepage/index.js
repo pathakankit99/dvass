@@ -6,6 +6,7 @@ import World from "./World"
 import Warrior from "./Warrior"
 import Roadmap from "./Roadmap"
 import Rarity from "./Rarity"
+import Team from "./Team"
 function Homepage() {
   return <div>
     <Hero />
@@ -14,7 +15,8 @@ function Homepage() {
     <World />
     <Warrior />
     <Roadmap />
-    <Rarity/>
+    <Rarity />
+    <Team/>
   </div>;
 }
 

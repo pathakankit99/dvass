@@ -25,6 +25,30 @@ const headData = [
     trait_type: 'Shogun War Head 4',
     para: '80.74% have this trait',
   },
+  {
+    key: 5,
+    image: '/images/rarity/img.png',
+    trait_type: 'Shogun War Head 5',
+    para: '44.44% have this trait',
+  },
+  {
+    key: 6,
+    image: '/images/rarity/img.png',
+    trait_type: 'Shogun War Head 6',
+    para: '68.92% have this trait',
+  },
+  {
+    key: 7,
+    image: '/images/rarity/img.png',
+    trait_type: 'Shogun War Head 7',
+    para: '740.85% have this trait',
+  },
+  {
+    key: 8,
+    image: '/images/rarity/img.png',
+    trait_type: 'Shogun War Head 8',
+    para: '0.74% have this trait',
+  },
 ]
 const faceData = [
   {
@@ -97,12 +121,6 @@ const hairData = [
     trait_type: 'Shogun War hair 3',
     para: '40.85% have this trait',
   },
-  {
-    key: 4,
-    image: '/images/rarity/img.png',
-    trait_type: 'Shogun War hair 4',
-    para: '80.74% have this trait',
-  },
 ]
 const ornamentsData = [
   {
@@ -136,24 +154,6 @@ const backgroundData = [
     image: '/images/rarity/img.png',
     trait_type: 'Shogun War background',
     para: '4.37% have this trait',
-  },
-  {
-    key: 2,
-    image: '/images/rarity/img.png',
-    trait_type: 'Shogun War background 2',
-    para: '8.92% have this trait',
-  },
-  {
-    key: 3,
-    image: '/images/rarity/img.png',
-    trait_type: 'Shogun War background 3',
-    para: '40.85% have this trait',
-  },
-  {
-    key: 4,
-    image: '/images/rarity/img.png',
-    trait_type: 'Shogun War Face 4',
-    para: '80.74% have this trait',
   },
 ]
 const traitList = [
@@ -194,11 +194,11 @@ const allData = {
   outfitsData,
   hairData,
   ornamentsData,
-  backgroundData
+  backgroundData,
 }
 const Rarity = () => {
-  const [data, setData] = useState(headData);
-  const [trait, setTrait] = useState("headData");
+  const [data, setData] = useState(headData)
+  const [trait, setTrait] = useState('headData')
   const settings = {
     dots: false,
     infinite: false,
@@ -227,7 +227,9 @@ const Rarity = () => {
       <div
         onClick={onClick}
         // style={{ ...style }}
-        className={'flex flex-col justify-center absolute top-0 bottom-0 left-0 z-50 cursor-pointer arrows'}
+        className={
+          'arrows absolute top-0 bottom-0 left-0 z-50 flex cursor-pointer flex-col justify-center'
+        }
       >
         <svg viewBox="0 0 130 130">
           <defs>
@@ -257,7 +259,7 @@ const Rarity = () => {
                 transform="translate(45 33)"
                 fill="#b80707"
                 stroke="#b80707"
-                stroke-width="1"
+                strokeWidth="1"
               >
                 <circle cx="20" cy="20" r="20" stroke="none" />
                 <circle cx="20" cy="20" r="19.5" fill="none" />
@@ -282,7 +284,9 @@ const Rarity = () => {
       <div
         onClick={onClick}
         // style={{ ...style }}
-        className={'flex flex-col justify-center absolute top-0 bottom-0 right-0 z-50 cursor-pointer arrows'}
+        className={
+          'arrows absolute top-0 bottom-0 right-0 z-50 flex cursor-pointer flex-col justify-center'
+        }
       >
         <svg viewBox="0 0 130 130">
           <defs>
@@ -312,7 +316,7 @@ const Rarity = () => {
                 transform="translate(45 33)"
                 fill="#b80707"
                 stroke="#b80707"
-                stroke-width="1"
+                strokeWidth="1"
               >
                 <circle cx="20" cy="20" r="20" stroke="none" />
                 <circle cx="20" cy="20" r="19.5" fill="none" />
@@ -336,7 +340,10 @@ const Rarity = () => {
   useEffect(() => {
     const temp = allData[trait]
     setData(temp)
-    // console.log(allData[trait],'DATA')
+    nav2?.slickGoTo(0)
+    // nav1?.slickGoTo(0)
+    // console.log(nav2, 'slider2')
+    
   }, [trait])
   return (
     <section
@@ -361,25 +368,19 @@ const Rarity = () => {
         </div>
       </div>
       <div className="center flex-wrap py-16">
-        <div
-          className="card-container flex py-6 lg:w-6/12 lg:flex-wrap"
-        >
+        <div className="card-container flex py-6 lg:w-6/12 lg:flex-wrap">
           {traitList?.map((item) => (
             <div
               key={item.key}
-              onClick={()=>setTrait(item.key)}
+              onClick={() => setTrait(item.key)}
               className={
                 item.key === trait
-                  ? 'cursor-pointer card m-2 rounded-2xl border border-brand_red bg-brand_red p-4 text-white'
-                  : 'cursor-pointer card m-2 rounded-2xl border border-brand_red p-4 text-white'
+                  ? 'card m-2 cursor-pointer rounded-2xl border border-brand_red bg-brand_red p-4 text-white'
+                  : 'card m-2 cursor-pointer rounded-2xl border border-brand_red p-4 text-white'
               }
             >
               <h5 className="pb-3 uppercase">{item.heading}</h5>
-              <p
-                className={
-                  item.key === trait ? '' : 'text-brand_gray'
-                }
-              >
+              <p className={item.key === trait ? '' : 'text-brand_gray'}>
                 {item?.para}
               </p>
             </div>
@@ -414,7 +415,7 @@ const Rarity = () => {
                   className="center w-full"
                 >
                   <div className="rounded-2xl border border-brand_red p-3 text-center">
-                    <p className="text-lg md:text-2xl capitalize text-brand_red">
+                    <p className="text-lg capitalize text-brand_red md:text-2xl">
                       {item.trait_type}
                     </p>
                     <p className="pt-2 text-sm font-thin">{item.para}</p>
