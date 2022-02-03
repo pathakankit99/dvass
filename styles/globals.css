@@ -22,19 +22,15 @@
   /* src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Black.ttf'); */
   src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-ExtraBold.ttf');
   /* src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Bold.ttf'); */
-  font-weight: 400;
   font-style: normal;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Saira Condensed';
   src: url('../fonts/Saira_Condensed/Saira_Condensed-Bold.ttf');
-  src: url('../fonts/Saira_Condensed/Saira_Condensed-SemiBold.ttf');
-  src: url('../fonts/Saira_Condensed/Saira_Condensed-Medium.ttf');
-  src: url('../fonts/Saira_Condensed/Saira_Condensed-Regular.ttf');
-  src: url('../fonts/Saira_Condensed/Saira_Condensed-Thin.ttf');
+  /* src: url('../fonts/Saira_Condensed/Saira_Condensed-SemiBold.ttf'); */
   font-style: normal;
-} */
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -327,6 +323,14 @@ aside {
     margin-top: -35vh;
   }
 }
+#roadmap-content .content h5{
+  font-weight: bolder;
+  font-family: 'Saira Condensed', sans-serif !important;
+}
+#roadmap-content .content h6{
+  font-weight: bolder;
+  font-family: 'Saira Condensed', sans-serif !important;
+}
 #roadmap-content .card .part1 .content {
   @apply w-9/12 p-3;
 }
@@ -342,6 +346,9 @@ aside {
 
 #roadmap-content .card .part2 {
   @apply flex items-end justify-end text-6xl text-brand_red opacity-40 lg:text-9xl;
+}
+#roadmap-content .ccard .part2{
+  font-family: 'Saira Semi Condensed', sans-serif !important;
 }
 @media only screen and (max-width: 521px) {
   #roadmap-content .card .part2 {
@@ -400,6 +407,14 @@ aside {
 } */
 #rarity .card-container .card {
   width: 46%;
+}
+#rarity .card h5{
+  font-weight: bolder;
+  font-family: 'Saira Semi condensed', sans-serif !important;
+}
+#rarity .rarity-attribute-detail .heading{
+  font-weight: bolder;
+  font-family: 'Saira Semi Condensed', sans-serif !important;
 }
 #rarity .card-container {
   overflow-x: hidden;
@@ -466,6 +481,10 @@ aside {
 #team h5 {
   @apply text-xl uppercase text-brand_red xl:text-2xl;
 }
+#team h5{
+  font-weight: bolder;
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+}
 #team h6 {
   @apply pb-3 text-sm xl:text-lg;
 }
@@ -526,13 +545,18 @@ aside {
   z-index: 5;
 }
 #faq .MuiAccordion-root {
-  @apply mb-4 rounded-2xl border border-brand_red bg-transparent lg:bg-brand_black text-brand_red;
+  @apply mb-4 rounded-2xl border border-brand_red bg-transparent text-brand_red;
 }
 #faq .MuiAccordionSummary-content p {
   @apply text-xl uppercase;
 }
-#faq  .MuiAccordion-root * {
-  font-weight: 800
+#faq  .MuiAccordion-root .MuiAccordionSummary-content p{
+  font-weight: bolder;
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+}
+#faq  .MuiAccordion-root .MuiAccordionDetails-root p{
+  font-weight: bolder;
+  font-family: 'Saira', sans-serif !important;
 }
 #faq .MuiAccordionDetails-root {
   @apply text-xs text-brand_gray;

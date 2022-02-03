@@ -41,10 +41,10 @@ const FAQ = () => {
             <img src="/images/story/img3.png" />
           </div>
           <div style={{ zIndex: 2 }} className="relative">
-            <h3 className="brand-title-small  mb-2 uppercase text-white md:text-2xl md:text-4xl">
+            <h3 className="brand-title-small  mb-2 uppercase text-white md:text-4xl md:text-4xl">
               Frequently asked questions
             </h3>
-            <h3 className="brand-title-big  text-2xl uppercase text-brand_red md:text-3xl md:text-5xl">
+            <h3 className="brand-title-big  text-2xl uppercase text-brand_red md:text-5xl md:text-5xl">
               Looking for answers?
             </h3>
           </div>

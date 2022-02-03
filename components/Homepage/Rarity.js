@@ -378,8 +378,8 @@ const Rarity = () => {
                   : 'card m-2 cursor-pointer rounded-2xl border border-brand_red p-4 text-white'
               }
             >
-              <h5 className="pb-3 uppercase">{item.heading}</h5>
-              <p className={item.key === trait ? '' : 'text-brand_gray'}>
+              <h5 className="pb-3 uppercase text-xl">{item.heading}</h5>
+              <p className={item.key === trait ? 'text-sm' : 'text-sm text-brand_gray'}>
                 {item?.para}
               </p>
             </div>
@@ -411,10 +411,10 @@ const Rarity = () => {
                 <div
                   style={{ background: '#0F0808' }}
                   key={item.key}
-                  className="center w-full"
+                  className="rarity-attribute-detail center w-full"
                 >
                   <div className="rounded-2xl border border-brand_red p-3 text-center">
-                    <p className="text-lg capitalize text-brand_red md:text-2xl">
+                    <p className="heading text-lg capitalize text-brand_red md:text-2xl">
                       {item.trait_type}
                     </p>
                     <p className="pt-2 text-sm font-thin">{item.para}</p>
