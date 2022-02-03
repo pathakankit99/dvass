@@ -19,18 +19,14 @@
 
 @font-face {
   font-family: 'Saira Semi Condensed';
-  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Black.ttf');
+  /* src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Black.ttf'); */
   src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-ExtraBold.ttf');
-  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Bold.ttf');
-  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-SemiBold.ttf');
-  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Medium.ttf');
-  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Regular.ttf');
-  /* src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Thin.ttf'); */
+  /* src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Bold.ttf'); */
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Saira Condensed';
   src: url('../fonts/Saira_Condensed/Saira_Condensed-Bold.ttf');
   src: url('../fonts/Saira_Condensed/Saira_Condensed-SemiBold.ttf');
@@ -38,7 +34,7 @@
   src: url('../fonts/Saira_Condensed/Saira_Condensed-Regular.ttf');
   src: url('../fonts/Saira_Condensed/Saira_Condensed-Thin.ttf');
   font-style: normal;
-}
+} */
 /* @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -533,7 +529,10 @@ aside {
   @apply mb-4 rounded-2xl border border-brand_red bg-transparent lg:bg-brand_black text-brand_red;
 }
 #faq .MuiAccordionSummary-content p {
-  @apply text-xl uppercase font-bold;
+  @apply text-xl uppercase;
+}
+#faq  .MuiAccordion-root * {
+  font-weight: 800
 }
 #faq .MuiAccordionDetails-root {
   @apply text-xs text-brand_gray;
