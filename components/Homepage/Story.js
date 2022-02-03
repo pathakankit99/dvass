@@ -6,6 +6,7 @@ const Story = () => {
       className="center relative overflow-x-hidden p-6 text-white lg:overflow-hidden  lg:px-24 xl:h-screen xl:px-52 "
     >
       <div
+        id="about"
         style={{
           zIndex: 1,
         }}
