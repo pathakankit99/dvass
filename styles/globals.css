@@ -341,7 +341,7 @@ aside {
   @apply pb-3 text-2xl md:text-4xl lg:text-6xl;
 }
 #roadmap-content .card .part1 .content p {
-  @apply text-sm font-thin tracking-wider text-brand_gray;
+  @apply text-sm tracking-wider text-brand_gray;
 }
 
 #roadmap-content .card .part2 {
