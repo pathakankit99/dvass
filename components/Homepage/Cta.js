@@ -14,14 +14,14 @@ const Cta = () => {
       <div className="content center w-full flex-wrap">
         <div className="w-full lg:w-7/12">
           <div>
-            <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
+            <h3 className="brand-title-small mb-2 text-2xl  uppercase text-white md:text-4xl">
               Join the strong
             </h3>
-            <h3 className="text-3xl font-medium uppercase text-brand_red md:text-5xl">
+            <h3 className="brand-title-big text-3xl  uppercase text-brand_red md:text-5xl">
               Warriors community
             </h3>
           </div>
-          <p className="text-md pt-3 text-sm font-light tracking-wider text-brand_gray md:text-base lg:pr-4">
+          <p className="text-md pt-3 text-sm  tracking-wider text-brand_gray md:text-base lg:pr-4">
             Join the discussion in one of our active online TTRPG communities,
             get tips, advice, and answers to questions. Share your ideas, be
             inspired, and debate the latest content release!
@@ -62,9 +62,11 @@ const Cta = () => {
               </button>
             </div>
 
-            <button className="md:hidden rounded-full bg-brand_red p-3" style={{ margin: 0 }}>
-              
-              <span className='text-xs' style={{width:"32px"}}>
+            <button
+              className="rounded-full bg-brand_red p-3 md:hidden"
+              style={{ margin: 0 }}
+            >
+              <span className="text-xs" style={{ width: '32px' }}>
                 <NextArrow />
               </span>
             </button>
@@ -76,7 +78,8 @@ const Cta = () => {
 }
 
 export default Cta
-{/* <div
+{
+  /* <div
               className="center absolute md:relative md:block"
               style={{ top: '120%', left: '0', right: '0' }}
             >
@@ -86,4 +89,5 @@ export default Cta
                   <NextArrow />
                 </span>
               </button>
-            </div> */}
+            </div> */
+}

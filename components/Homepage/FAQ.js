@@ -2,14 +2,14 @@ import Accordion from '@mui/material/Accordion'
 import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import Typography from '@mui/material/Typography'
-import react,{useState} from 'react'
-import DownArrow from "../Icons/DownArrow"
+import react, { useState } from 'react'
+import DownArrow from '../Icons/DownArrow'
 const FAQ = () => {
-    const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
-     const handleChange = (panel) => (event, isExpanded) => {
-       setExpanded(isExpanded ? panel : false)
-    }
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false)
+  }
   return (
     <section
       style={{ background: '#0b090a' }}
@@ -40,10 +40,10 @@ const FAQ = () => {
           <img src="/images/story/img3.png" />
         </div>
         <div style={{ zIndex: 2 }} className="relative">
-          <h3 className="mb-2 font-medium uppercase text-white md:text-2xl md:text-4xl">
+          <h3 className="brand-title-small  mb-2 uppercase text-white md:text-2xl md:text-4xl">
             Frequently asked questions
           </h3>
-          <h3 className="text-2xl font-medium uppercase text-brand_red md:text-3xl md:text-5xl">
+          <h3 className="brand-title-big  text-2xl uppercase text-brand_red md:text-3xl md:text-5xl">
             Looking for answers?
           </h3>
         </div>

@@ -343,7 +343,6 @@ const Rarity = () => {
     nav2?.slickGoTo(0)
     // nav1?.slickGoTo(0)
     // console.log(nav2, 'slider2')
-    
   }, [trait])
   return (
     <section
@@ -359,10 +358,10 @@ const Rarity = () => {
           <img width={300} src="/images/story/img3.png" />
         </div>
         <div style={{ marginTop: '2%', zIndex: '3' }} className="relative">
-          <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
+          <h3 className="brand-title-small mb-2 text-2xl  uppercase text-white md:text-4xl">
             Creating a warriors
           </h3>
-          <h3 className="text-3xl font-medium uppercase text-brand_red md:text-5xl">
+          <h3 className="brand-title-big text-3xl  uppercase text-brand_red md:text-5xl">
             rarity
           </h3>
         </div>

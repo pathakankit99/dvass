@@ -1,9 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Saira';
+  src: url('../fonts/Saira/Saira-Black.ttf');
+  src: url('../fonts/Saira/Saira-ExtraBold.ttf');
+  src: url('../fonts/Saira/Saira-Bold.ttf');
+  src: url('../fonts/Saira/Saira-SemiBold.ttf');
+  src: url('../fonts/Saira/Saira-Medium.ttf');
+  src: url('../fonts/Saira/Saira-Regular.ttf');
+  src: url('../fonts/Saira/Saira-Light.ttf');
+  src: url('../fonts/Saira/Saira-ExtraLight.ttf');
+  src: url('../fonts/Saira/Saira-Thin.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira Semi Condensed';
+  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Black.ttf');
+  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-ExtraBold.ttf');
+  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Bold.ttf');
+  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-SemiBold.ttf');
+  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Medium.ttf');
+  src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Regular.ttf');
+  /* src: url('../fonts/Saira_SemiCondensed/Saira_SemiCondensed-Thin.ttf'); */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira Condensed';
+  src: url('../fonts/Saira_Condensed/Saira_Condensed-Bold.ttf');
+  src: url('../fonts/Saira_Condensed/Saira_Condensed-SemiBold.ttf');
+  src: url('../fonts/Saira_Condensed/Saira_Condensed-Medium.ttf');
+  src: url('../fonts/Saira_Condensed/Saira_Condensed-Regular.ttf');
+  src: url('../fonts/Saira_Condensed/Saira_Condensed-Thin.ttf');
+  font-style: normal;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 * {
   font-family: 'Saira', sans-serif !important;
+  font-weight: 800;
 }
 p {
   line-height: 1.4rem !important;
@@ -15,7 +57,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 .btn {
-  @apply m-2 inline-block items-center rounded-3xl px-4 py-2 text-xs font-light capitalize tracking-wider md:text-sm;
+  @apply m-2 inline-block items-center rounded-3xl px-4 py-2 text-xs  capitalize tracking-wider md:text-sm;
 }
 .primary {
   @apply inline-block flex bg-brand_red font-thin text-white;
@@ -73,8 +115,16 @@ p {
 .placeholder-red::placeholder {
   @apply text-brand_red;
 }
+.brand-title-small {
+  font-weight: 600;
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+}
+.brand-title-big {
+  font-weight: bolder;
+  font-family: 'Saira Semi Condensed', sans-serif !important;
+}
 /* navbar */
-aside{
+aside {
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
 }
@@ -285,7 +335,7 @@ aside{
   @apply w-9/12 p-3;
 }
 #roadmap-content .card .part1 .content h6 {
-  @apply text-xl font-light text-brand_red;
+  @apply text-xl  text-brand_red;
 }
 #roadmap-content .card .part1 .content h5 {
   @apply pb-3 text-2xl md:text-4xl lg:text-6xl;
@@ -397,7 +447,7 @@ aside{
 #team {
   overflow-x: hidden;
 }
-#team *{
+#team * {
   z-index: 3;
 }
 #team .desktop-card-container .card {
@@ -466,28 +516,27 @@ aside{
 }
 
 /* faq */
-#faq *{
+#faq * {
   z-index: 3;
 }
-#faq .arrows svg{
-  width:50px;
-  height:50px;
+#faq .arrows svg {
+  width: 50px;
+  height: 50px;
 }
-#faq .MuiAccordion-root{
-background-color: #0b090a;
-color: white;
-mix-blend-mode: normal;
-z-index: 5;
+#faq .MuiAccordion-root {
+  background-color: #0b090a;
+  color: white;
+  mix-blend-mode: normal;
+  z-index: 5;
 }
-#faq .MuiAccordion-root{
-@apply text-brand_red border border-brand_red bg-transparent mb-4 rounded-2xl;
+#faq .MuiAccordion-root {
+  @apply mb-4 rounded-2xl border border-brand_red bg-transparent text-brand_red;
 }
-#faq .MuiAccordionSummary-content p{
-  @apply uppercase text-xl;
+#faq .MuiAccordionSummary-content p {
+  @apply text-xl uppercase;
 }
-#faq .MuiAccordionDetails-root{
-  @apply text-brand_gray text-xs;
+#faq .MuiAccordionDetails-root {
+  @apply text-xs text-brand_gray;
 }
 
 /* footer */
-

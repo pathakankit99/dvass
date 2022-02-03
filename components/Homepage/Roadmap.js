@@ -23,15 +23,15 @@ const Roadmap = () => {
             <img src="/images/story/img3.png" />
           </div>
           <div style={{ marginTop: '5vh', zIndex: '3' }} className="relative">
-            <h3 className="mb-2 text-2xl font-medium uppercase text-white md:text-4xl">
+            <h3 className="brand-title-small mb-2 text-2xl  uppercase text-white md:text-4xl">
               The battle plan
             </h3>
-            <h3 className="text-3xl font-medium uppercase text-brand_red md:text-5xl">
+            <h3 className="brand-title-big text-3xl  uppercase text-brand_red md:text-5xl">
               warriors road map
             </h3>
           </div>
           <div style={{ zIndex: '3' }} className="relative w-full ">
-            <p className="text-md relative pt-3 text-sm text-base font-light tracking-wider text-brand_gray">
+            <p className="text-md relative pt-3 text-sm text-base  tracking-wider text-brand_gray">
               You must understand that there is more than one path to the top of
               the mountain.
             </p>
@@ -185,7 +185,7 @@ const Roadmap = () => {
           </p>
         </div>
 
-        <hr className="border-brand_red m-6" />
+        <hr className="m-6 border-brand_red" />
       </section>
     </div>
   )
