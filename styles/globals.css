@@ -272,7 +272,7 @@ p {
 }
 @media only screen and (max-width: 480px) {
   #roadmap-content .card .part1 .lamp img {
-    margin-top: -50vh;
+    margin-top: -35vh;
   }
 }
 #roadmap-content .card .part1 .content {
@@ -428,7 +428,7 @@ p {
 
 #team .arrows svg {
   width: 100px;
-  z-index: 100;
+  z-index: 100 !important;
 }
 
 @media only screen and (max-width: 521px) {
@@ -482,3 +482,5 @@ z-index: 5;
 #faq .MuiAccordionDetails-root{
   @apply text-brand_gray text-xs;
 }
+
+/* footer */

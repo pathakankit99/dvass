@@ -66,6 +66,7 @@ const Team = () => {
         return (
           <div
             onClick={onClick}
+            style={{zIndex:200}}
             // style={{ ...style }}
             className={
               'arrows absolute prev top-0 bottom-0 left-0 z-50 flex cursor-pointer flex-col justify-center'
@@ -127,6 +128,7 @@ const Team = () => {
         return (
           <div
             onClick={onClick}
+            style={{zIndex:200}}
             // style={{ ...style }}
             className={
               'arrows absolute next top-0 bottom-0 right-0 z-50 flex cursor-pointer flex-col justify-center'

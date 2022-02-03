@@ -3,6 +3,7 @@ const Story = () => {
     <section
       style={{ background: '#0b090a' }}
       id="story"
+      id="about"
       className="center relative overflow-x-hidden p-6 text-white lg:overflow-hidden  lg:px-24 xl:h-screen xl:px-52 "
     >
       <div
