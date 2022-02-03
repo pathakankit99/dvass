@@ -428,6 +428,7 @@ p {
 
 #team .arrows svg {
   width: 100px;
+  z-index: 100;
 }
 
 @media only screen and (max-width: 521px) {
@@ -456,4 +457,28 @@ p {
     height: 40vw;
     object-fit: cover;
   }
+}
+
+/* faq */
+#faq *{
+  z-index: 3;
+}
+#faq .arrows svg{
+  width:50px;
+  height:50px;
+}
+#faq .MuiAccordion-root{
+background-color: #0b090a;
+color: white;
+mix-blend-mode: normal;
+z-index: 5;
+}
+#faq .MuiAccordion-root{
+@apply text-brand_red border border-brand_red bg-transparent mb-4 rounded-2xl;
+}
+#faq .MuiAccordionSummary-content p{
+  @apply uppercase text-xl;
+}
+#faq .MuiAccordionDetails-root{
+  @apply text-brand_gray text-xs;
 }
