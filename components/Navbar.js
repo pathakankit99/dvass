@@ -129,14 +129,14 @@ function Navbar() {
         <div
           onClick={() => setOpen(!open)}
           style={{ zIndex: 900 }}
-          className="absolute right-0"
+          className="absolute right-0 lg:hidden"
         >
           <Menu />
         </div>
       </nav>
       <aside
         style={style}
-        className="fixed left-0 right-0 top-0 bottom-0 z-50 min-h-screen w-full bg-brand_black"
+        className="lg:hidden fixed left-0 right-0 top-0 bottom-0 z-50 min-h-screen w-full bg-brand_black"
       >
         <div className="pages border-r pr-3">
           <ul className="py-32 px-6">
