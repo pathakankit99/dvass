@@ -530,10 +530,10 @@ aside {
   z-index: 5;
 }
 #faq .MuiAccordion-root {
-  @apply mb-4 rounded-2xl border border-brand_red bg-transparent text-brand_red;
+  @apply mb-4 rounded-2xl border border-brand_red bg-transparent lg:bg-brand_black text-brand_red;
 }
 #faq .MuiAccordionSummary-content p {
-  @apply text-xl uppercase;
+  @apply text-xl uppercase font-bold;
 }
 #faq .MuiAccordionDetails-root {
   @apply text-xs text-brand_gray;
