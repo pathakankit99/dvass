@@ -6,13 +6,9 @@ import react,{useState} from 'react'
 import DownArrow from "../Icons/DownArrow"
 const FAQ = () => {
     const [expanded, setExpanded] = useState(false)
-    const [expanded2, setExpanded2] = useState("panel1")
 
      const handleChange = (panel) => (event, isExpanded) => {
        setExpanded(isExpanded ? panel : false)
-    }
-    const handleChange2 = (panel) => (event, isExpanded2) => {
-      setExpanded2(isExpanded2 ? panel : false)
     }
   return (
     <section
@@ -44,20 +40,20 @@ const FAQ = () => {
           <img src="/images/story/img3.png" />
         </div>
         <div style={{ zIndex: 2 }} className="relative">
-          <h3 className="mb-2 md:text-2xl font-medium uppercase text-white md:text-4xl">
+          <h3 className="mb-2 font-medium uppercase text-white md:text-2xl md:text-4xl">
             Frequently asked questions
           </h3>
-          <h3 className="text-2xl md:text-3xl font-medium uppercase text-brand_red md:text-5xl">
+          <h3 className="text-2xl font-medium uppercase text-brand_red md:text-3xl md:text-5xl">
             Looking for answers?
           </h3>
         </div>
       </div>
-      <div className="accordion-container flex flex-wrap w-full pt-6">
+      <div className="accordion-container flex w-full flex-wrap pt-6">
         <div className="w-full md:w-6/12">
           <div className="lg:pr-3">
             <Accordion
-              expanded={expanded2 === 'panel1'}
-              onChange={handleChange2('panel1')}
+              expanded={expanded === 'panel1'}
+              onChange={handleChange('panel1')}
             >
               <AccordionSummary
                 expandIcon={
@@ -79,8 +75,8 @@ const FAQ = () => {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              expanded={expanded2 === 'panel2'}
-              onChange={handleChange2('panel2')}
+              expanded={expanded === 'panel2'}
+              onChange={handleChange('panel2')}
             >
               <AccordionSummary
                 expandIcon={
@@ -102,8 +98,8 @@ const FAQ = () => {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              expanded={expanded2 === 'panel3'}
-              onChange={handleChange2('panel3')}
+              expanded={expanded === 'panel3'}
+              onChange={handleChange('panel3')}
             >
               <AccordionSummary
                 expandIcon={
@@ -130,8 +126,8 @@ const FAQ = () => {
           <div className="lg:pl-3">
             <Accordion
               className="accordion-card"
-              expanded={expanded === 'panel1'}
-              onChange={handleChange('panel1')}
+              expanded={expanded === 'panel4'}
+              onChange={handleChange('panel4')}
             >
               <AccordionSummary
                 className="accordion-card-title"
@@ -154,8 +150,8 @@ const FAQ = () => {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              expanded={expanded === 'panel2'}
-              onChange={handleChange('panel2')}
+              expanded={expanded === 'panel5'}
+              onChange={handleChange('panel5')}
             >
               <AccordionSummary
                 expandIcon={
@@ -177,8 +173,8 @@ const FAQ = () => {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              expanded={expanded === 'panel3'}
-              onChange={handleChange('panel3')}
+              expanded={expanded === 'panel6'}
+              onChange={handleChange('panel6')}
             >
               <AccordionSummary
                 expandIcon={
