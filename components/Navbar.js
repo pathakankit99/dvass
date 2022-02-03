@@ -1,10 +1,15 @@
 import Link from 'next/link'
-import React from 'react'
-
+import React, { useState } from 'react'
+import Menu from "./Icons/Menu"
 function Navbar() {
+  const [open, setOpen] = useState(false)
+    const MobileNav = { true: 'translateX(0%)', false: 'translateX(100%)' }
+    var style = {
+      transform: MobileNav[open],
+    }
   return (
-    <div className="z-10 p-6 text-white lg:px-24 xl:px-52">
-      <nav className="hidden items-center justify-between lg:flex">
+    <div className="relative z-10 p-6 text-white lg:px-24 xl:px-52">
+      <nav className=" relative flex items-center justify-between">
         <div className="logo flex items-center">
           <img width={46} src="/images/navbar/logo.png" />
           <img
@@ -13,7 +18,7 @@ function Navbar() {
             src="/images/navbar/shogun_warriors.png"
           />
         </div>
-        <div className="navigation flex">
+        <div className="navigation hidden lg:flex">
           <div className="pages border-r pr-3">
             <ul className="flex">
               <li className="text-md px-2">
@@ -121,7 +126,35 @@ function Navbar() {
             </ul>
           </div>
         </div>
+        <div
+          onClick={() => setOpen(!open)}
+          style={{ zIndex: 900 }}
+          className="absolute right-0"
+        >
+          <Menu />
+        </div>
       </nav>
+      <aside
+        style={style}
+        className="absolute left-0 right-0 top-0 bottom-0 z-50 min-h-screen w-full bg-brand_black"
+      >
+        <div className="pages border-r pr-3">
+          <ul className="py-32 px-6">
+            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link onClick={()=>setOpen(false)}  href="#about">About</Link>
+            </li>
+            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link onClick={()=>setOpen(false)}  href="#roadmap">Roadmap</Link>
+            </li>
+            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link onClick={()=>setOpen(false)}  href="#rarity">Rarity</Link>
+            </li>
+            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link onClick={()=>setOpen(false)}  href="#faq">FAQ</Link>
+            </li>
+          </ul>
+        </div>
+      </aside>
     </div>
   )
 }

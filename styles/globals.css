@@ -73,6 +73,12 @@ p {
 .placeholder-red::placeholder {
   @apply text-brand_red;
 }
+/* navbar */
+aside{
+  transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+}
+/* hero */
 @media only screen and (max-width: 700px) {
   .hero-warrior img {
     width: 150vw;
@@ -484,3 +490,4 @@ z-index: 5;
 }
 
 /* footer */
+
