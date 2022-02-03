@@ -136,21 +136,21 @@ function Navbar() {
       </nav>
       <aside
         style={style}
-        className="absolute left-0 right-0 top-0 bottom-0 z-50 min-h-screen w-full bg-brand_black"
+        className="fixed left-0 right-0 top-0 bottom-0 z-50 min-h-screen w-full bg-brand_black"
       >
         <div className="pages border-r pr-3">
           <ul className="py-32 px-6">
-            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
-              <Link onClick={()=>setOpen(false)}  href="#about">About</Link>
+            <li onClick={()=>setOpen(false)}  className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link href="#about">About</Link>
             </li>
-            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
-              <Link onClick={()=>setOpen(false)}  href="#roadmap">Roadmap</Link>
+            <li onClick={()=>setOpen(false)}  className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link href="#roadmap">Roadmap</Link>
             </li>
-            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
-              <Link onClick={()=>setOpen(false)}  href="#rarity">Rarity</Link>
+            <li onClick={()=>setOpen(false)}  className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link href="#rarity">Rarity</Link>
             </li>
-            <li className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
-              <Link onClick={()=>setOpen(false)}  href="#faq">FAQ</Link>
+            <li onClick={()=>setOpen(false)}  className="my-6 border-b border-brand_red py-3 px-2 text-2xl uppercase text-brand_red hover:border-white hover:text-white ">
+              <Link href="#faq">FAQ</Link>
             </li>
           </ul>
         </div>
