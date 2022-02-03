@@ -18,12 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       instagram={INSTAGRAM}
       youtube={YOUTUBE}
       discord={DISCORD}/>
-      <Component {...pageProps} 
-      fb={FB}
-      twitter={TWITTER}
-      instagram={INSTAGRAM}
-      youtube={YOUTUBE}
-      discord={DISCORD}/>
+      <Component {...pageProps}/>
       <Footer 
       fb={FB}
       twitter={TWITTER}

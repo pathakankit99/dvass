@@ -28,7 +28,7 @@ const Cta = (props) => {
           </p>
           <div className="flex pt-4">
             <a
-              href={props?.discord}
+              href={process.env.NEXT_PUBLIC_DISCORD}
               target="_blank"
               referrerPolicy="no-referrer"
             >
@@ -40,7 +40,7 @@ const Cta = (props) => {
               </button>
             </a>
             <a
-              href={props?.twitter}
+              href={process.env.NEXT_PUBLIC_TWITTER}
               target="_blank"
               referrerPolicy="no-referrer"
             >

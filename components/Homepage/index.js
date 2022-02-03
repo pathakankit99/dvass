@@ -8,17 +8,17 @@ import Roadmap from "./Roadmap"
 import Rarity from "./Rarity"
 import Team from "./Team"
 import FAQ from "./FAQ"
-function Homepage() {
+function Homepage(props) {
   return <div>
-    <Hero />
-    <Cta />
-    <Story />
-    <World />
-    <Warrior />
-    <Roadmap />
-    <Rarity />
-    <Team />
-    <FAQ />
+    <Hero props={props}/>
+    <Cta props={props}/>
+    <Story props={props}/>
+    <World props={props}/>
+    <Warrior props={props}/>
+    <Roadmap props={props}/>
+    <Rarity props={props}/>
+    <Team props={props}/>
+    <FAQ props={props}/>
   </div>;
 }
 

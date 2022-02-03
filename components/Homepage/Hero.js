@@ -42,7 +42,7 @@ function Hero(props) {
               </button>
             </a>
             <a
-              href={props?.discord}
+              href={process.env.NEXT_PUBLIC_DISCORD}
               target="_blank"
               referrerPolicy="no-referrer"
             >
